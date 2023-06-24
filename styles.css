@@ -1,3 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+:root {
+  --primary-color: #a20000   ;
+  --secondary-color: #48e5a1 ;
+  --accent1-color: #004d95;
+  --accent2-color: white;
+
+  --heading-font: "MedievalSharp";
+  --paragraph-font: "Kanit","MedievalSharp","sans-serif";
+
+  --headline-color-on-white: var(--primary-color);
+  --headline-color-on-color: var(--accent1-color);
+  --paragraph-color-on-white: var(--secondary-color);
+  --paragraph-color-on-color: var(--accent1-color);
+  --paragraph-background-color: var(--secondary-color);
+  --nav-link-color: var(--secondary-color);
+  --nav-background-color: var(--primary-color);
+  --nav-hover-link-color: var(--accent1-color);
+  --nav-hover-background-color: var(--secondary-color);
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family:"MedievalSharp", "Kanit", sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+header {
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: var(--secondary-color)
+}
+
+.logo {
+  width: 75%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-align: center;
+  color: var(--accent1-color);
+  text-decoration: none;
+  padding: 35px
+}
+
+nav a:hover {
+background-color:var(--secondary-color); 
+  color: var(--primary-color)
+}
+
+.find-games {
+  width: 50%;
+
+}
 
 form {
     /* Center the form on the page */
@@ -77,4 +140,47 @@ form {
 }
 .moveDown {
     margin-top: 3em;
+}
+
+
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+  #hero {
+      margin-top: 0;
+  }
+  #hero-msg {
+      margin-top: 0;
+  }
+  #hero-msg h4 {
+      display: none;
+  }
+  .home-title {
+      font-size: 25px;
+      color: #6f7364;
+  }
+  .rivers-card, .camping-card, .rapids-card { 
+      margin: 50px auto;
+      width: 60%;
+  }
+  #background {
+      display: none;
+  }
+  .mountains, .msg {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+  }
+  footer {
+      margin-top: 25px;
+  }
 }

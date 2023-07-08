@@ -40,7 +40,7 @@ body {
   background-color: var(--primary-color);
   font-family: "MedievalSharp", "Kanit", sans-serif;
   font-size: 22px;
-  text-align: center;
+  
 }
 
 header {
@@ -52,20 +52,21 @@ header {
 }
 
 .logo {
-  width: 20%;
+  width: 150px;
   margin-right: auto;
   }
   
   nav {
     display: flex;
     align-items: center;
+    
   }
 
 nav a {
   text-align: center;
   color: var(--accent1-color);
   text-decoration: none;
-  padding: 35px;
+  padding: 100px;
 }
 
 nav a:hover {
@@ -173,37 +174,60 @@ nav a:hover {
   grid-row: 1;
 }
 
+.lancer_game_image{
+  width: 100%;
+}
+
 .lancer_game_join {
   grid-column: 1;
   grid-row: 2;
   margin: 15px;
+  text-align: center;
 }
+
+.fire_game_image{
+  width: 100%;
+} 
+
 .fire_game_join {
   grid-column: 2;
   grid-row: 2;
   margin: 15px;
+  text-align: center;
+}
+
+.apocalypse_game_image{
+  width: 100%;
 }
 
 .apocalypse_game_join{
   grid-column: 3;
   grid-row: 2;
   margin: 15px;
+  text-align: center;
 }
 
 
-/* .star_wars_game_image{
+.star_wars_game_image{
   width: 100%;
-} */
+}
 
 .star_wars_game_join {
   grid-column: 4;
   grid-row: 2;
   margin: 15px;
+  text-align: center;
 }
+
+.gleb_image{
+  width: 100%;
+}
+
 .runeterra_game_join{
   grid-column: 5;
   grid-row: 2;
   margin: 15px;
+  text-align: center;
 }
 
 
@@ -212,6 +236,9 @@ footer {
   grid-template-columns: 1fr;
   background-color: var(--secondary-color);
   width: 100%;
+  align-items: center;
+  text-align: center;
+
 }
 
 .social img {

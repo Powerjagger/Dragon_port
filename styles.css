@@ -55,7 +55,12 @@ header {
   width: 150px;
   margin-right: auto;
   }
-  
+
+.logo-store {
+  width: 150px;
+  margin-right: auto;
+  }
+
   nav {
     display: flex;
     align-items: center;
@@ -111,37 +116,42 @@ nav a:hover {
 }
 
 .art-of-the-day {
-  order: 7; 
+  grid-column: 2/3;
+  grid-row: 2/3; 
 }
 
 .trinket-day {
-  order: 9; 
+  grid-column: 3/4;
+  grid-row: 2/3 
 }
 
 .sword {
-  order: 10; 
   max-width: 100%;
+  grid-column: 3/4;
+  grid-row: 2/3 ;
 }
 
 .game-day {
-  order: 5; 
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 .lancer-img {
-  order: 5; 
   max-width: 100%;
 }
 
 .find-trinkets {
-  order: 3; 
+  grid-column: 3/4;
+  grid-row:1/2;
 }
 
 .dice {
-  order: 4;
   max-width: 100%;
+  grid-column: 3/4;
+  grid-row:1/2;
 }
 
-#boat-box {
+.boat {
   align-items: center;
   width: 100%;
 }
@@ -149,20 +159,54 @@ nav a:hover {
 .fire-game {
   width: 100%;
   grid-column: 1/2;
-  grid-row: 2/3;
+  grid-row: 1/2;
 }
 
 .roth {
   max-width: 100%;
-  margin-top: 20px;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
+.grid-container-home {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
 
-.grid-container {
+.grid-container-games {
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
 }
 
+.grid-container-store {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(2,1fr);
+}
+.dice-store {
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.sword-store {
+  width: 100%;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.potion {
+  width: 100%;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.bag_of_dice{
+  width: 100%;
+  grid-column: 2;
+  grid-row: 2;
+}
 
 .upcoming {
   grid-column: 1;
@@ -230,6 +274,9 @@ nav a:hover {
   text-align: center;
 }
 
+.bag_of_dice{
+  
+}
 
 footer {
   display: grid;

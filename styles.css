@@ -81,7 +81,7 @@ nav a:hover {
 
 .home-grid {
   display: grid;
-  grid: template columns 1fr;
+  grid-template-columns: repeat(1, 1fr); 
   justify-items: center;
   align-items: center;
   gap: 20px;
@@ -181,37 +181,26 @@ nav a:hover {
 
 .grid-container-store {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: repeat(2,1fr);
 }
 .dice-store {
-  width: 100%;
-  grid-column: 1;
-  grid-row: 1;
+  width: 80%;
 }
 
 .sword-store {
-  width: 100%;
-  grid-column: 1;
-  grid-row: 2;
+  width: 80%;
 }
 
 .potion {
-  width: 100%;
-  grid-column: 2;
-  grid-row: 1;
+  width: 80%;
+  height: 70%;
 }
 
 .bag_of_dice{
-  width: 100%;
-  grid-column: 2;
-  grid-row: 2;
+  width: 80%;
 }
 
-.upcoming {
-  grid-column: 1;
-  grid-row: 1;
-}
 
 .create{
   grid-column: 5;
@@ -299,19 +288,19 @@ footer {
 
 
 
-#sidenav a {
-  position: absolute; /* Position them relative to the browser window */
-  left: -80px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 15px; /* 15px padding */
-  width: 100px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+#sidenav {
+  position: absolute; 
+  left: -80px; 
+  transition: 0.3s; 
+  padding: 15px; 
+  width: 100px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  color: white; 
+  border-radius: 0 5px 5px 0; 
 }
 
-.sidenav a {
+.sidenav {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -359,6 +348,34 @@ footer {
   top: 380px;
   margin-left: auto;
   background-color: var(--secondary-color)
+}
+
+.deal-of-the-day {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+  margin: 20px;
+}
+
+.popular-now {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: center;
+  margin: 20px;
+}
+
+.for-you {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: center;
+  margin: 20px;
+}
+
+.new {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  margin: 20px;
 }
 
 .main {

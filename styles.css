@@ -151,10 +151,21 @@ nav a:hover {
   grid-row:1/2;
 }
 
-.boat {
+#boat {
+  display: flex;
+  justify-content: center; 
   align-items: center;
   width: 100%;
 }
+
+#boat-box {
+  text-align: center;
+}
+
+#boat-img {
+  max-width: 100%;
+}
+
 
 .fire-game {
   width: 100%;
